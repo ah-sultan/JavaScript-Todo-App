@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+.container{
+    width: 100%;
+    padding: 40px;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(188,93,249,1) 0%, rgba(89,32,166,1) 55%); 
+    
+} 
+
+.to-do-list{
+    margin: 0 auto;
+    width: 300px;
+}
+
+.to-do-list .input-section{
+    background: #fff;
+    padding: 15px;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 0 23px #0006;
+    margin-bottom: 10px;
+    border-top: 2px solid #7E52EB;;
+}
+
+.to-do-list .input-section .list-value {
+	border: 1px solid #d3d3d3;
+	padding: 6px;
+	border-radius: 8px;
+	color: #7E52EB;
+    font-size: 14px;
+}
+
+.to-do-list .input-section .submit-btn{
+    padding: 7px;
+    background: #7E52EB;
+    border: 0;
+    color: #fff;
+    border-radius: 7px;
+    font-weight: 600;
+    cursor: pointer;   
+    
+}
+
+.to-do-list .output-section{
+    background: #fff;
+    padding: 15px;
+    border-radius:0 0 20px 20px ;
+    box-shadow: 0 0 23px #0006;
+    border-bottom: 5px solid #7E52EB;
+}
+
+.to-do-list .output-section .table-box{
+
+    min-height: 150px;
+}
+.to-do-list .output-section .list-table{
+    width: 100%;
+
+}
+
+.to-do-list .output-section .list-table .list-item {
+	border-bottom: 1px solid #CECECE;
+	padding: 15px 2px 6px;
+    
+}
+
+.to-do-list .output-section .list-table .list-item p {
+    font-size: 18px;
+}
+.to-do-list .output-section .list-table .list-item:last-child{
+    text-align: right;
+}
+
+.done{
+    position: relative;
+    display: inline-block;
+
+}
+.done::after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #000;
+    display: inline-block;
+}
+
+
+.to-do-list .output-section .list-table .list-btn{
+    background: transparent;
+    border: 0;
+    font-size: 16px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.to-do-list .reset-section{
+    text-align: center;
+    padding-top: 20px;
+    margin-top: auto;
+}
+
+.to-do-list .reset-section #reset-btn{
+    background: #7E52EB;
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border: 0;
+    border-radius:5px ;
+}
